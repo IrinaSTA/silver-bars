@@ -4,7 +4,8 @@
   "description": "live trading order board",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "cypress:open": "cypress open"
   },
   "author": "Irina Baldwin",
   "license": "ISC",
