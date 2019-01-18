@@ -1,0 +1,18 @@
+{
+  "name": "silver-bars",
+  "version": "1.0.0",
+  "description": "live trading order board",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Irina Baldwin",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.1.4",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jasmine": "^3.3.1"
+  }
+}
