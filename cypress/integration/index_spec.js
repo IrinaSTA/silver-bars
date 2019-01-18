@@ -1,6 +1,7 @@
 describe('My First Test', function() {
   it('visits the live trading board', function() {
     cy.visit('/index.html')
+    cy.contains('Live Order Board')
     cy.contains('Enter New Order:')
     cy.contains('User ID')
     cy.contains('Quantity')
