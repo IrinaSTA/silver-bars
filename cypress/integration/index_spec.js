@@ -17,6 +17,6 @@ describe('Live Order Board', function() {
     cy.get('input[name="quantity"]').type('100')
     cy.get('input[name="price"]').type('567')
     cy.get('input[value="Bid"]').click()
-    cy.get('.orders').should('contain', 'Bid 100 567')
+    cy.get('.orders').should('contain', 'Bid 100 567.00')
   })
 })
