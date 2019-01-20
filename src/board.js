@@ -1,7 +1,7 @@
-function Board() {
-  this.orders = [];
+function Board(orderList) {
+  this.orderList = orderList;
 }
 
 Board.prototype.add = function (order) {
-  this.orders.push(order);
+  this.orderList.add(order);
 };
