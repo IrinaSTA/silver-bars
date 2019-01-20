@@ -18,7 +18,6 @@ describe('Board', function () {
   describe('#add', function () {
     it('adds an order to its list of orders', function() {
       board.add(orderMock);
-      console.log(board.orderList);
       expect(board.orderList.all.length).toEqual(2);
     });
   });
