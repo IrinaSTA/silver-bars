@@ -43,10 +43,17 @@
     }
   }
 
+  function boardViewMock() {
+    return {
+      orderListView: orderListViewMock(),
+    }
+  }
+
   exports.liveBidMock = liveBidMock;
   exports.cancelledBidMock = cancelledBidMock;
   exports.orderViewMock = orderViewMock;
   exports.orderListMock = orderListMock;
   exports.orderListViewMock = orderListViewMock;
   exports.boardMock = boardMock;
+  exports.boardViewMock = boardViewMock;
 })(this);
