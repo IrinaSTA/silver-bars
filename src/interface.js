@@ -8,6 +8,8 @@ $(document).ready(function () {
     var quantity = parseInt($("input[name=quantity]").val());
     var price = parseFloat($("input[name=price]").val());
     var type = event.target.value;
+    var form = document.getElementById('order-form');
+    form.reset();
     var order = new Order(userid, quantity, price, type)
     var orderView = new OrderView(order);
     board.add(order);
