@@ -39,7 +39,7 @@
 
   function boardMock() {
     return {
-      orderList: orderListMock,
+      orderList: orderListMock(),
     }
   }
 
