@@ -7,3 +7,9 @@ BoardView.prototype.renderList = function() {
   var node = this.orderListView.renderLive();
   element.appendChild(node);
 }
+
+BoardView.prototype.addOrder = function(orderView) {
+  var element = document.getElementById('live-orders');
+  var node = orderView.renderListItem();
+  element.appendChild(node);
+}
