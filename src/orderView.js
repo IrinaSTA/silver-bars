@@ -7,7 +7,10 @@ OrderView.prototype.render = function () {
 };
 
 OrderView.prototype.renderListItem = function () {
-  return `<li>${this.render()}</li>`;
+  var li = document.createElement("LI");
+  var node = document.createTextNode(this.render());
+  li.appendChild(node);
+  return li;
 }
 
 OrderView.prototype.orderType = function () {
