@@ -19,6 +19,34 @@
     }
   }
 
+  function orderViewMock() {
+    return {
+      order: liveBidMock(),
+    }
+  }
+
+  function orderListMock() {
+    return {
+      all: [liveBidMock(), liveBidMock()],
+    }
+  }
+
+  function orderListViewMock() {
+    return {
+      orders: orderListMock(),
+    }
+  }
+
+  function boardMock() {
+    return {
+      orderList: orderListMock,
+    }
+  }
+
   exports.liveBidMock = liveBidMock;
   exports.cancelledBidMock = cancelledBidMock;
+  exports.orderViewMock = orderViewMock;
+  exports.orderListMock = orderListMock;
+  exports.orderListViewMock = orderListViewMock;
+  exports.boardMock = boardMock;
 })(this);
