@@ -18,4 +18,11 @@ describe('OrderView', function () {
       expect(html).toEqual("Bid 100 567.00");
     });
   });
+
+  describe('#renderListItem', function () {
+    it('return an html list item with an order', function () {
+      const htmlListItem = orderView.renderListItem();
+      expect(htmlListItem).toEqual('<li>Bid 100 567.00</li>');
+    })
+  })
 });
