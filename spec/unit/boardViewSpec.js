@@ -22,7 +22,6 @@ describe('BoardViewSpec', function () {
       var elementMock = document.createElement('div');
       spyOn(document, 'getElementById').and.returnValue(elementMock);
       boardViewMock.displayOrder(orderMock);
-      console.log(elementMock.innerHTML);
       expect(elementMock.innerHTML).toEqual("<li>Bid 100 567.00</li>");
     })
   })
