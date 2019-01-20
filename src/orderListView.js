@@ -3,10 +3,12 @@ function OrderListView(orderList) {
 }
 
 OrderListView.prototype.renderLive = function () {
-  var orderViews = ''
+  var orderViews = document.createElement('ul');
   this.orders.getLive().forEach(function(order) {
     var orderView = new OrderView(order);
-    orderViews += orderView.renderListItem();
+    var node = orderView.renderListItem();
+    orderViews.appendChild(node);
   })
+  console.log(orderViews.nodeType);
   return orderViews;
 }
