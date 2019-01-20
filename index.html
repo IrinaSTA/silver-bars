@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Live Order Board</title>
+    <script src="src/order.js"></script>
+    <script src="src/orderView.js"></script>
+    <script src="src/board.js"></script>
+    <script src="src/boardView.js"></script>
+    <script src="src/interface.js"></script>
   </head>
   <body>
     <h1> Live Order Board </h1>
@@ -14,11 +19,13 @@
         <input type="submit" name="order" value="Bid">
         <input type="submit" name="order" value="Ask">
       </form>
+    <h2> Submitted Orders: <h2>
     <div class="orders">
-      <h2> Submitted Orders: <h2>
+      <ul id="live-orders"></ul>
     </div>
+    <h2> Live Order Summary: <h2>
     <div class="summary">
-      <h2> Live Order Summary: <h2>
+      <ul id="order-summaries"></ul>
     </div>
   </body>
 </html>

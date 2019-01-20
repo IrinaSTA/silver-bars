@@ -4,7 +4,7 @@ function OrderView(order) {
 }
 
 OrderView.prototype.render = function () {
-  const content = `<div class='order'>${this.orderType()} ${this.order.quantity} ${this.orderPrice()}</div>`;
+  const content = `${this.orderType()} ${this.order.quantity} ${this.orderPrice()}`;
   this.element = content;
   return this.element;
 };

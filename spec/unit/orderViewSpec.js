@@ -15,7 +15,7 @@ describe('OrderView', function () {
   describe('#render', function () {
     it('Returns an html representation of an order', function () {
       const html = orderView.render();
-      expect(html).toEqual("<div class='order'>Bid 100 567.00</div>");
+      expect(html).toEqual("Bid 100 567.00");
     });
   });
 });
