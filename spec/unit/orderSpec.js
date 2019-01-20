@@ -10,5 +10,6 @@ describe('Order', function () {
     expect(bidOrder.quantity).toEqual(100);
     expect(bidOrder.price).toEqual(567.00);
     expect(bidOrder.type).toEqual('bid');
+    expect(bidOrder.live).toEqual(true);
   });
 });

@@ -3,4 +3,5 @@ function Order(userid, quantity, price, type) {
   this.quantity = quantity;
   this.price = price;
   this.type = type;
+  this.live = true;
 }
