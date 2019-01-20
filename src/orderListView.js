@@ -9,6 +9,5 @@ OrderListView.prototype.renderLive = function () {
     var node = orderView.renderListItem();
     orderViews.appendChild(node);
   })
-  console.log(orderViews.nodeType);
   return orderViews;
 }
