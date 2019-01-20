@@ -1,12 +1,9 @@
 function BoardView(board) {
-  this.board = board;
+  this.orderListView = new OrderListView(board.orderList);
 }
 
-BoardView.prototype.displayOrder = function(order) {
-  var orderView = new OrderView(order); // hard to isolate in tests
-  var listItem = document.createElement('li');
-  var order = document.createTextNode(orderView.render());
-  listItem.appendChild(order);
+BoardView.prototype.renderList = function() {
   var element = document.getElementById('live-orders');
-  element.appendChild(listItem);
+  var node = this.orderListView.renderLive();
+  element.appendChild(node);
 }
