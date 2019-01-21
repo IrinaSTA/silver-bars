@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  const board = new Board(new OrderList());
-  const boardView = new BoardView(board);
+  const boardView = new BoardView(new OrderList());
+  const orderSummary = new OrderSummary();
+  const orderSummaryView = new OrderSummaryView(orderSummary);
 
   $("input[type=submit]").on('click', function(event) {
     event.preventDefault();
@@ -12,7 +13,8 @@ $(document).ready(function () {
     form.reset();
     var order = new Order(userid, quantity, price, type)
     var orderView = new OrderView(order);
-    board.add(order);
     boardView.addOrder(orderView);
+    orderSummary.add(order);
+    boardView.updateSummaries(orderSummaryView);
   })
 })
