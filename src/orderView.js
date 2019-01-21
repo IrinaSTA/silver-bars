@@ -21,6 +21,6 @@
   OrderView.prototype.orderPrice = function () {
     return this.order.price.toFixed(2);
   };
-  
+
   exports.OrderView = OrderView;
 })(this);
