@@ -9,7 +9,7 @@ describe('OrderView', function () {
   describe('#render', function () {
     it('returns a formatted orders string', function () {
       const html = orderView.render();
-      expect(html).toEqual('Bid 100 567.00');
+      expect(html).toEqual('Bid: 100 kg for 567.00');
     });
   });
 
@@ -18,7 +18,7 @@ describe('OrderView', function () {
       const htmlListItem = orderView.renderListItem();
       // a list item has nodeType 1
       expect(htmlListItem.nodeType).toEqual(1);
-      expect(htmlListItem.innerHTML).toEqual('Bid 100 567.00');
+      expect(htmlListItem.innerHTML).toEqual('Bid: 100 kg for 567.00');
     })
   })
 });

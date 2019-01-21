@@ -6,6 +6,6 @@
     this.type = type;
     this.live = true;
   }
-  
+
   exports.Order = Order;
 })(this);
