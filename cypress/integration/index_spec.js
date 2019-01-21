@@ -25,8 +25,8 @@ describe('Live Order Board', function () {
     placeBid();
     placeBid();
     placeAsk();
-    cy.get('.summary').should('contain', 'Ask 200 567.00')
-    cy.get('.summary').should('contain', 'Bid 200 567.00')
+    cy.get('.summary').should('contain', '200 567 Ask')
+    cy.get('.summary').should('contain', '200 567 Bid')
   })
   function placeBid() {
     cy.get('input[name="userid"]').type('1234')
