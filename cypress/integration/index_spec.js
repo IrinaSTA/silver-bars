@@ -4,7 +4,6 @@ describe('Live Order Board', function () {
   })
   it('has a form for registering an order', function () {
     cy.contains('Live Order Board')
-    cy.contains('Enter New Order:')
     cy.contains('User ID')
     cy.contains('Quantity')
     cy.contains('Price')
@@ -14,19 +13,19 @@ describe('Live Order Board', function () {
   it('allows user to place a bid', function () {
     cy.visit('/index.html')
     placeBid()
-    cy.get('.orders').should('contain', 'Bid 100 567.00')
+    cy.get('.orders').should('contain', 'Bid: 100 kg for 567.00')
   })
   it('allows user to place an ask', function () {
     cy.visit('/index.html')
     placeAsk()
-    cy.get('.orders').should('contain', 'Ask 100 567.00')
+    cy.get('.orders').should('contain', 'Ask: 100 kg for 567.00')
   })
   it('displays order summary', function () {
     placeBid();
     placeBid();
     placeAsk();
-    cy.get('.summary').should('contain', '200 567 Ask')
-    cy.get('.summary').should('contain', '200 567 Bid')
+    cy.get('.summary').should('contain', '200 kg for 567 (Ask)')
+    cy.get('.summary').should('contain', '200 kg for 567 (Bid)')
   })
   function placeBid() {
     cy.get('input[name="userid"]').type('1234')
