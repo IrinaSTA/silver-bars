@@ -7,6 +7,14 @@ This app was test driven using Cypress for feature tests and Jasmine for unit te
 
 ![feature](/public/images/board.png)
 
+## What I wold do next
+
+- Finish isolating tests for OrderListView, OrderSummaryView and BoardView
+- Include missing tests for OrderSummaryView and BoardView
+- Implement cancel orders feature, most likely by implementing a unique order id, that can be used to identify the order being cancelled
+- Separate order summaries into Bids and Asks. Sort each by price, ascending for Asks, and descending for Bids
+- Implement data validation for orders.
+
 ## To use
 
 Clone the repo, navigate to the directory, and open index.html in your browser.
