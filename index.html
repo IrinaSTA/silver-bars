@@ -12,23 +12,27 @@
     <script src="src/orderSummaryView.js"></script>
     <script src="src/boardView.js"></script>
     <script src="src/interface.js"></script>
+    <link rel="stylesheet" href="public/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <h1> Live Order Board </h1>
-    <h2> Enter New Order: <h2>
-      <form id="order-form">
+    <form id="order-form">
+      <fieldset>
+        <legend>Enter New Order</legend>
         User ID:<input type="text" name="userid"><br>
         Quantity:<input type="text" name="quantity"><br>
         Price:<input type="text" name="price"><br>
         <input type="submit" name="order" value="Bid">
         <input type="submit" name="order" value="Ask">
-      </form>
-    <h2> Submitted Orders: <h2>
+    </fieldset>
+    </form>
     <div class="orders">
+      <h2> Submitted Orders: <h2>
       <ul id="live-orders"></ul>
     </div>
-    <h2> Live Order Summary: <h2>
     <div class="summary">
+      <h2> Live Order Summary: <h2>
       <ul id="order-summaries"></ul>
     </div>
   </body>

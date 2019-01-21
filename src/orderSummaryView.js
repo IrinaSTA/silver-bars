@@ -15,7 +15,7 @@
 
   function renderSummaryLine(summary) {
     var li = document.createElement("LI");
-    var node = document.createTextNode(`${summary.quantity} ${summary.price} ${summary.type}`);
+    var node = document.createTextNode(`${summary.quantity} kg for ${summary.price} (${summary.type})`);
     li.appendChild(node);
     return li;
   }
