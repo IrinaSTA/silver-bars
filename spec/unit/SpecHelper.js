@@ -47,9 +47,13 @@
     }
   }
 
-  function boardMock() {
+  function orderSummaryMock() {
     return {
-      orderList: orderListMock(),
+      bid567: {
+        type: 'bid',
+        price: 567.00,
+        quantity: 100,
+      }
     }
   }
 
@@ -65,6 +69,6 @@
   exports.orderViewMock = orderViewMock;
   exports.orderListMock = orderListMock;
   exports.orderListViewMock = orderListViewMock;
-  exports.boardMock = boardMock;
+  exports.orderSummaryMock = orderSummaryMock;
   exports.boardViewMock = boardViewMock;
 })(this);

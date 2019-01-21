@@ -1,4 +1,4 @@
-(function(exports) {
+(function (exports) {
   function Order(userid, quantity, price, type) {
     this.userid = userid;
     this.quantity = quantity;

@@ -4,12 +4,10 @@ describe('OrderListView', function () {
 
   beforeEach(function () {
     orderMock = liveBidMock();
-    // orderList = orderListMock();
     orderList = new OrderList();
     orderList.add(orderMock);
     orderList.add(orderMock);
     orderListView = new OrderListView(orderList);
-    // spyOn(orderListView.orderList, 'getLive').and.returnValue([orderMock, orderMock])
   })
 
   describe('#renderLive', function () {
