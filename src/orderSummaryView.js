@@ -15,9 +15,13 @@
 
   function renderSummaryLine(summary) {
     var li = document.createElement("LI");
-    var node = document.createTextNode(`${summary.quantity} kg for ${summary.price} (${summary.type})`);
+    var node = document.createTextNode(`${summary.quantity} kg for ${formatPrice(summary.price)} (${summary.type})`);
     li.appendChild(node);
     return li;
+  }
+
+  function formatPrice(price) {
+    return price.toFixed(2);
   }
 
   exports.OrderSummaryView = OrderSummaryView;

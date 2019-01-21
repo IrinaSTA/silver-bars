@@ -24,8 +24,8 @@ describe('Live Order Board', function () {
     placeBid();
     placeBid();
     placeAsk();
-    cy.get('.summary').should('contain', '200 kg for 567 (Ask)')
-    cy.get('.summary').should('contain', '200 kg for 567 (Bid)')
+    cy.get('.summary').should('contain', '200 kg for 567.00 (Ask)')
+    cy.get('.summary').should('contain', '200 kg for 567.00 (Bid)')
   })
   function placeBid() {
     cy.get('input[name="userid"]').type('1234')
