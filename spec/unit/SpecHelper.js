@@ -9,6 +9,16 @@
     }
   };
 
+  function liveAskMock() {
+    return {
+      userid: '1234',
+      quantity: 100,
+      price: 667.00,
+      type: 'ask',
+      live: true,
+    }
+  }
+
   function cancelledBidMock() {
     return {
       userid: '1234',
@@ -50,6 +60,7 @@
   }
 
   exports.liveBidMock = liveBidMock;
+  exports.liveAskMock = liveAskMock;
   exports.cancelledBidMock = cancelledBidMock;
   exports.orderViewMock = orderViewMock;
   exports.orderListMock = orderListMock;
