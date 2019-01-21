@@ -1,16 +1,16 @@
 (function(exports) {
   function OrderSummary() {
-    this.summary = {};
+    this.all = {};
   }
 
   OrderSummary.prototype.add = function (order) {
     var newOrder = this.process(order);
     var key = Object.keys(newOrder)[0];
-    if (this.summary.hasOwnProperty(key)) {
-      var newQuantity = this.summary[key].quantity + order.quantity
-      this.summary[key] = { type: order.type, price: order.price, quantity: newQuantity }
+    if (this.all.hasOwnProperty(key)) {
+      var newQuantity = this.all[key].quantity + order.quantity
+      this.all[key] = { type: order.type, price: order.price, quantity: newQuantity }
     } else {
-      this.summary[key] = newOrder[key];
+      this.all[key] = newOrder[key];
     }
   }
 
