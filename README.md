@@ -5,6 +5,8 @@ buy and sell orders and view order summaries.
 
 This app was test driven using Cypress for feature tests and Jasmine for unit tests.
 
+![feature](/public/images/board.png)
+
 ## To use
 
 Clone the repo, navigate to the directory, and open index.html in your browser.
@@ -23,6 +25,6 @@ in your browser.
 
 Test results are copied here:
 
-![feature](/public/images/feature_tests.jpg)
+![feature](/public/images/feature_tests.png)
 
-![unit](/public/images/unit_tests.jpg)
+![unit](/public/images/unit_tests.png)
