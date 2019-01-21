@@ -20,7 +20,7 @@ Clone the repo, navigate to the directory, and open index.html in your browser.
 
 Feature tests are written in Cypress, units tests are written in Jasmine.
 
-To run feature tests, while in project director, enter the following in your
+To run feature tests, while in project directory, enter the following in your
 terminal:
 
 ```
